@@ -66,6 +66,15 @@ const Index = () => {
           <Button colorScheme="gray" variant="solid" bg="black" color="white">Contact</Button>
         </Flex>
       </Box>
+
+      <Box bg="green.500" w="100%" p={4} color="white" position="fixed" bottom="0" zIndex="3">
+        <Container maxW="container.xl">
+          <Flex justify="space-between" align="center">
+            <Text>© 2023 VC Firm. All rights reserved.</Text>
+            <Text>Privacy Policy</Text>
+          </Flex>
+        </Container>
+      </Box>
     </Container>
   );
 };
