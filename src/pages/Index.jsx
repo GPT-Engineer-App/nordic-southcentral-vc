@@ -4,8 +4,8 @@ import { FaBuilding, FaChartLine, FaEnvelope, FaMapMarkedAlt } from "react-icons
 const Index = () => {
   return (
     <Container maxW="container.xl" p={0}>
-      <Box bg="brand.800" w="100%" p={4} color="white" position="fixed" top="0" zIndex="3">
-        <Container maxW="container.xl">
+      <Box bg="brand.800" w="100vw" p={4} color="white" position="fixed" top="0" zIndex="3">
+        <Container>
           <Flex justify="space-between" align="center">
             <Heading size="lg">VC Firm</Heading>
             <Button colorScheme="blue" variant="outline">Contact Us</Button>
@@ -67,8 +67,8 @@ const Index = () => {
         </Flex>
       </Box>
 
-      <Box bg="green.500" w="100%" p={4} color="white" position="fixed" bottom="0" zIndex="3">
-        <Container maxW="container.xl">
+      <Box bg="green.500" w="100vw" p={4} color="white" position="fixed" bottom="0" zIndex="3">
+        <Container>
           <Flex justify="space-between" align="center">
             <Text>© 2023 VC Firm. All rights reserved.</Text>
             <Text>Privacy Policy</Text>
