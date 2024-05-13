@@ -54,7 +54,7 @@ const Index = () => {
             <FormLabel>Message</FormLabel>
             <Textarea />
           </FormControl>
-          <Button colorScheme="blue">Send Message</Button>
+          <Button colorScheme="gray" variant="solid" bg="black" color="white">Contact</Button>
         </Flex>
       </Box>
     </Container>
