@@ -4,7 +4,16 @@ import { FaBuilding, FaChartLine, FaEnvelope, FaMapMarkedAlt } from "react-icons
 const Index = () => {
   return (
     <Container maxW="container.xl" p={0}>
-      <Box as="section" bg="gray.100" py={10} px={6} textAlign="center">
+      <Box bg="brand.800" w="100%" p={4} color="white" position="fixed" top="0" zIndex="3">
+        <Container maxW="container.xl">
+          <Flex justify="space-between" align="center">
+            <Heading size="lg">VC Firm</Heading>
+            <Button colorScheme="blue" variant="outline">Contact Us</Button>
+          </Flex>
+        </Container>
+      </Box>
+
+      <Box as="section" bg="gray.100" py={10} px={6} textAlign="center" pt="100px">
         <Heading mb={4} size="2xl">Empowering Innovation</Heading>
         <Text fontSize="xl">Investing in the future of the Nordics and South Central Europe</Text>
         <Image src="https://via.placeholder.com/1200x500" alt="VC Firm Hero Image" mt={4} borderRadius="md" />
