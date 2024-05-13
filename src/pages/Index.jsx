@@ -1,18 +1,62 @@
-// Update this page (the content is just a fallback if you fail and example)
-// Use chakra-ui
-import { Container, Text, VStack } from "@chakra-ui/react";
-
-// Example of using react-icons
-// import { FaRocket } from "react-icons/fa";
-// <IconButton aria-label="Add" icon={<FaRocket />} size="lg" />; // IconButton would also have to be imported from chakra
+import { Box, Container, Flex, Heading, Image, Input, Text, VStack, Button, SimpleGrid, FormControl, FormLabel, Textarea } from "@chakra-ui/react";
+import { FaBuilding, FaChartLine, FaEnvelope, FaMapMarkedAlt } from "react-icons/fa";
 
 const Index = () => {
   return (
-    <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
-      <VStack spacing={4}>
-        <Text fontSize="2xl">Your Blank Canvas</Text>
-        <Text>Chat with the agent to start making edits.</Text>
-      </VStack>
+    <Container maxW="container.xl" p={0}>
+      <Box as="section" bg="gray.100" py={10} px={6} textAlign="center">
+        <Heading mb={4} size="2xl">Empowering Innovation</Heading>
+        <Text fontSize="xl">Investing in the future of the Nordics and South Central Europe</Text>
+        <Image src="https://via.placeholder.com/1200x500" alt="VC Firm Hero Image" mt={4} borderRadius="md" />
+      </Box>
+
+      <Box as="section" py={10} px={6}>
+        <Heading mb={4} size="xl">Investment Principles</Heading>
+        <Text fontSize="lg">We believe in a hands-on approach to venture capital, focusing on sustainable growth and long-term partnerships.</Text>
+      </Box>
+
+      <Box as="section" bg="gray.50" py={10} px={6}>
+        <Heading mb={4} size="xl">Areas of Interest</Heading>
+        <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
+          <VStack>
+            <FaChartLine size="3em" />
+            <Text fontSize="md">Emerging Technologies</Text>
+          </VStack>
+          <VStack>
+            <FaBuilding size="3em" />
+            <Text fontSize="md">Real Estate Innovations</Text>
+          </VStack>
+          <VStack>
+            <FaMapMarkedAlt size="3em" />
+            <Text fontSize="md">Geographical Expansions</Text>
+          </VStack>
+        </SimpleGrid>
+      </Box>
+
+      <Box as="section" py={10} px={6}>
+        <Heading mb={4} size="xl">Portfolio Companies</Heading>
+        <Flex wrap="wrap" justifyContent="space-around">
+          <Image src="https://via.placeholder.com/200" alt="Company Logo" p={2} />
+          <Image src="https://via.placeholder.com/200" alt="Company Logo" p={2} />
+          <Image src="https://via.placeholder.com/200" alt="Company Logo" p={2} />
+          <Image src="https://via.placeholder.com/200" alt="Company Logo" p={2} />
+        </Flex>
+      </Box>
+
+      <Box as="section" bg="gray.100" py={10} px={6}>
+        <Heading mb={4} size="xl">Contact Us</Heading>
+        <Flex direction="column" align="center" maxW="md" mx="auto">
+          <FormControl id="email" mb={4}>
+            <FormLabel>Email Address</FormLabel>
+            <Input type="email" />
+          </FormControl>
+          <FormControl id="message" mb={4}>
+            <FormLabel>Message</FormLabel>
+            <Textarea />
+          </FormControl>
+          <Button colorScheme="blue">Send Message</Button>
+        </Flex>
+      </Box>
     </Container>
   );
 };
